@@ -1,0 +1,37 @@
+@import '../abstract/variaveis';
+@import '../components/login';
+
+.tela-cadastro {
+    @include telaFormulario();
+    img {
+        @include dimensaoImgForm();
+    }
+    h2 {
+        @include labelForm($fonte-titulo);
+    }
+    #cadastro {
+        @include fieldset();
+        #btn-cadastrar {
+            @include botaoConfirm();
+            margin-top: 15px;
+        }
+        .line-l {
+            background-color: black;
+            position: absolute;
+            top: 506px;
+            left: 27px;
+            width: 35%;
+            height: 1px;
+            border: none
+        }
+        .line-r {
+            background-color: black;
+            position: absolute;
+            top: 506px;
+            right: 27px;
+            width: 35%;
+            height: 1px;
+            border: none
+        }
+    }
+}        

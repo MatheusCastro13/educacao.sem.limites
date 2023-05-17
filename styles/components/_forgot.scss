@@ -1,0 +1,31 @@
+@import '../abstract/variaveis';
+@import '../components/login';
+
+.tela-forgot {
+    @include telaFormulario();
+    img {
+        @include dimensaoImgForm();
+    }
+    h2 {
+        @include labelForm($fonte-titulo);
+    }
+    .recuperar {
+        text-align: center;
+        h3 {
+            font-size: 1.15rem;
+            font-family: $fonte-titulo;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: .9rem;
+            font-family: $fonte-titulo;
+        }
+    }
+    
+    #forgot {
+        @include fieldset();
+        #btn-enviar {
+            @include botaoConfirm();
+        }
+    }
+}

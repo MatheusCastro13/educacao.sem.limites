@@ -1,0 +1,42 @@
+@import '../abstract/variaveis';
+
+.informacoes-basicas {
+    @include formatacaoInfBasica();
+    h3 {
+        @include tituloInf();
+    }
+    h2 {
+        @include tituloBloco();
+    }
+    p {
+        @include textoInf();
+    }
+}
+
+.informacoes-gerais {
+    background-color: $cor-quartenaria;
+    border-radius: 30px;
+    border: 1px solid $cor-cinco;
+    padding: 10px;
+    .titulo-informacoes {
+        @include tituloBloco();
+        padding: 10px 10px 5px;
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+    }
+    h3 {
+        @include tituloInf();
+    }
+    p {
+        @include textoInf();
+    }
+}
+
+.sobre-profissional {
+    h2 { 
+        @include tituloBloco();
+    }
+    p {
+        @include textoInf();
+    }
+}

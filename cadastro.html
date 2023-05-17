@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educaçao Sem Limites</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/2212beeac0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html"><img src="assets/Logo.png" alt="Logo Educaçao sem limites">Educação Sem Limites</a></h1>
+            <input type="checkbox" id="menu" class="container__botao" placeholder="">
+            <label for="menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="menu-lateral">
+                <ul class="nav">
+                    <li><a href="about.html">Sobre Nós</a></li>
+                    <li><a href="escolas.html">Escolas</a></li>
+                    <li><a href="profissionais.html">Profissionais</a></li>
+                    <li><a href="details.html">Saiba Mais</a></li>
+                </ul>
+                <ul class="menu-cadastro">
+                    <li><a href="cadastro.html" class="cadastrar">Cadastre-se</a></li>
+                    <li class="ou">ou</li>
+                    <li><a href="login.html" class="entrar">Entrar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="tela-cadastro">
+            <img src="/assets/Logo.png" alt="logo ed sem limites">
+            <h2>Educação Sem Limites</h2>
+            <fieldset id="cadastro">
+                <label for="nome">Digite seu Nome Completo:</label>
+                <input type="text" name="nome" id="nome">
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu Nome" required>
+
+                <label>Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+
+                <button type="button"  id="btn-cadastrar">Cadastrar</button>
+                <label for="btn-cadastrar"></label>
+            </fieldset>    
+    </main>
+    <footer>
+        <p>Educação Sem Limites</p>
+    </footer>            
+</body>
+</html>    

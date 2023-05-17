@@ -1,0 +1,18 @@
+@import '../abstract/variaveis';
+
+
+.lista-escolas {
+    @include formatacaoLista();
+    .escola-n {
+        @include blocoItemLista();
+        img {
+            @include imagemItem();
+        }
+        p {
+            @include paragrafoItem();
+        }
+        a {
+            @include linkItem();
+        }
+    }
+}

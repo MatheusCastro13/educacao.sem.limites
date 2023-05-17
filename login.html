@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educaçao Sem Limites</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/2212beeac0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html"><img src="assets/Logo.png" alt="Logo Educaçao sem limites">Educação Sem Limites</a></h1>
+            <input type="checkbox" id="menu" class="container__botao" placeholder="">
+            <label for="menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="menu-lateral">
+                <ul class="nav">
+                    <li><a href="about.html">Sobre Nós</a></li>
+                    <li><a href="escolas.html">Escolas</a></li>
+                    <li><a href="profissionais.html">Profissionais</a></li>
+                    <li><a href="details.html">Saiba Mais</a></li>
+                </ul>
+                <ul class="menu-cadastro">
+                    <li><a href="cadastro.html" class="cadastrar">Cadastre-se</a></li>
+                    <li class="ou">ou</li>
+                    <li><a href="login.html" class="entrar">Entrar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="tela-login">
+            <img src="/assets/Logo.png" alt="logo ed sem limites">
+            <h2>Educação Sem Limites</h2>
+            <fieldset id="login">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu Email" required>
+
+                <label>Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+
+                <a class="forgot" href="forgot.html">Esqueci minha senha</a>
+
+                <button type="button"  id="btn-logar">Login</button>
+                <label for="btn-logar"></label>
+
+                <hr class="line-l"><p>Ou</p><hr class="line-r">
+
+                <p class="sem-conta">Não possui conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+            </fieldset>
+        </section>
+    </main>
+    <footer>
+        <p>Educação Sem Limites</p>
+    </footer>
+</body>
+</html>    

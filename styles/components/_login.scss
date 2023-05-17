@@ -1,0 +1,106 @@
+@import '../abstract/variaveis';
+
+@mixin telaFormulario(){
+    display: flex;
+    flex-direction: column;
+    background-color: $cor-quartenaria;
+    border-radius: 30px;
+    border: 2px solid $cor-cinco;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+@mixin dimensaoImgForm(){
+    width: 139px;
+    height: 139px;
+    border: 1px solid $cor-cinco;
+    border-radius: 30px;
+    //margin: 10px 0 20px 0;
+}
+
+@mixin labelForm($fonte){
+    font-size: 1.9rem;
+    font-family: $fonte;
+}
+
+@mixin fieldset(){
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    label {
+        text-align: start;
+        font-family: $fonte-titulo;
+        font-weight: bold;
+        color: $cor-cinco;
+        font-size: .9rem;
+    }
+    input {
+        border-radius: 30px;
+        border: 2px solid #181823;
+        padding: 8px 10px;
+    }
+}
+
+@mixin botaoConfirm(){
+    background-color: $cor-terciaria;
+    border-radius: 30px;
+    border: none;
+    padding: 4px;
+    font-family: $fonte-titulo;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    cursor: pointer;    
+}
+
+.tela-login {
+    @include telaFormulario();
+    img {
+        @include dimensaoImgForm();
+    }
+    h2 {
+        @include labelForm($fonte-titulo);
+    }
+    #login {
+        @include fieldset();
+        .forgot {
+            text-align: end;
+            color: $cor-terciaria;
+            font-style: italic;
+            cursor: pointer;
+        }
+        #btn-logar {
+            @include botaoConfirm();
+        }
+        .line-l {
+            background-color: black;
+            position: absolute;
+            top: 506px;
+            left: 27px;
+            width: 35%;
+            height: 1px;
+            border: none
+        }
+        .line-r {
+            background-color: black;
+            position: absolute;
+            top: 506px;
+            right: 27px;
+            width: 35%;
+            height: 1px;
+            border: none
+        }
+        .sem-conta {
+            font-size: .9rem;
+            font-family: $fonte-titulo;
+            margin-top: 15px;
+            a {
+                cursor: pointer;
+                text-decoration: none;
+                color: $cor-terciaria;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@import '../abstract/variaveis';
+@import '../components/lista-escolas';
+
+.lista-profissionais {
+    @include formatacaoLista();
+    .profissional-n {
+        @include blocoItemLista();
+        img {
+            @include imagemItem();
+        }
+        p {
+            @include paragrafoItem();
+        }
+        a {
+            @include linkItem();
+        }
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educaçao Sem Limites</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/2212beeac0.js" crossorigin="anonymous"></script>
+    
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html"><img src="assets/Logo.png" alt="Logo Educaçao sem limites">Educação Sem Limites</a></h1>
+            <div class="botao-hamburguer">
+                <input type="checkbox" id="menu" class="container__botao" placeholder="">
+                <label for="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            </label>
+            <div class="menu-lateral" >
+                <ul class="nav">
+                    <li><a href="about.html">Sobre Nós</a></li>
+                    <li><a href="escolas.html">Escolas</a></li>
+                    <li><a href="profissionais.html">Profissionais</a></li>
+                    <li><a href="details.html">Saiba Mais</a></li>
+                </ul>
+                <ul class="menu-cadastro">
+                    <li><a href="cadastro.html" class="cadastrar">Cadastre-se</a></li>
+                    <li class="ou">ou</li>
+                    <li><a href="login.html" class="entrar">Entrar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <img class="banner-mobile" src="assets/Banner.png" alt="mensagem-banner">
+            <div class="pesquisar-escola-home">
+                <div class="area">
+                    
+                    <fieldset>
+                        <select id="selecionar-estado" aria-label="estado">
+                            <option selected disabled>UF: </option>
+                            <option>Goiás</option>
+                            <option>Minas Gerais</option>
+                            <option>Tocantins</option>
+                        </select>
+                        <select id="selecionar-cidade" aria-label="cidade">
+                            <option selected disabled>Cidade: </option>
+                            <option>Aragoiânia</option>
+                            <option>Aruanã</option>
+                            <option>Goiânia</option>
+                            <option>Itumbiara</option>
+                        </select>
+                        <button type="button" name="buscar" id="buscar" placeholder="buscar">Buscar</button>
+                        <label for="buscar"></label>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="bloco-lista-escola">
+            <img src="/assets/imagem-libras.png" alt="imagem-libras">
+            <h3>Já tem uma escola em mente?</h3>
+            <p>A equipe do  Educação Sem limites separou uma lista de escolas, as quais pode-se encontrar profissionais de apoio não apenas pela região, como também, você pode verificar se escola que você está de olho possui esse profissionais.</p>
+            <a href="escolas.html">Veja lista completa aqui</a>
+        </div>
+        <div class="bloco-cadastro">
+            <img src="/assets/prof-aluno.png" alt="aluno">
+            <h3>é um profissional de apoio?</h3>
+            <p>A equipe do  Educação Sem limites fornece um sistema de cadastro de profissionais de apoio, reunindo esse profissionais com finalidade de facilitar o encontro entre eles e pais ou mesmo instituições que busquem seus serviços. Junte-se a nós e ajude-nos a promover uma acessa a uma educação de qualidade.</p>
+            <a href="cadastro.html">Cadastre-se Aqui</a>
+        </div>
+    </main>
+    <footer>
+        <p>Educação Sem Limites</p>
+    </footer>
+</body>    
+</html>

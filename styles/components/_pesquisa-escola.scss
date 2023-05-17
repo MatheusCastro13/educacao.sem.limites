@@ -1,0 +1,148 @@
+@import '../abstract/variaveis';
+
+@mixin formatacao($margem){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $cor-quartenaria;
+    font-size: 1rem;
+    text-align: center;
+    font-family: $fonte-texto;
+    margin-top: $margem;
+}
+
+@mixin tituloPagina() {
+    color: $cor-quartenaria;
+    font-size: 1.1rem;
+    padding: 7px;
+    border-radius: 0 0 10px 10px;
+    background-color: $cor-terciaria;
+    font-family: $fonte-titulo;
+    margin-bottom: 10px;
+}
+
+@mixin barraBusca() {
+    width: 80vw;
+    background: url('/assets/lupa.png') no-repeat;
+    height: 20px;
+    box-shadow: none;
+    background-color: $cor-quartenaria;
+    padding: 15px 40px;
+    border-radius: 30px;
+    background-position: left;
+    background-size: 20px;
+    background-position: 4cqmin;
+    margin: 15px 0;
+}
+
+@mixin paragrafo() {
+    color: $cor-quartenaria;
+    font-size: 1rem;
+    font-family: $fonte-texto;
+    padding: 12px 0;
+    margin-bottom: 10px;
+}
+
+@mixin seletor() {
+    padding: 5px 15px;
+    width: 30vw;
+    height: 25px;
+    border-radius: 30px;    
+}
+
+@mixin botaoBuscar() {
+    height: 25px;
+    width: 20vw;
+    border-radius: 30px;
+    background-color: $cor-terciaria;
+    color: $cor-quartenaria;
+    margin-left: 10px;
+}
+
+@mixin divisaoFiltro() {
+    display: flex;
+    flex-direction: row-reverse;
+    border-top: 2px solid $cor-quartenaria;
+    border-bottom: 2px solid $cor-quartenaria;
+    margin-top: 20px;
+    padding: 10px;    
+}
+
+@mixin filtroDropDown() {
+    background-color: $cor-quartenaria;
+    border-radius: 15px;
+    border: 1px solid $cor-cinco;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 378px;    
+}
+
+@mixin listaPagina() {
+    text-align: center;
+    padding: 8px;    
+}
+
+@mixin tituloFiltro() {
+    color: $cor-cinco;
+    font-style: italic;
+    font-family: $fonte-titulo;
+    margin-bottom: 15px;
+    text-decoration: underline; 
+}
+
+@mixin botaoFiltro() {
+    padding: 5px 10px;
+    background-color: $cor-terciaria;
+    color: $cor-quartenaria;
+}
+
+.titulo-escolas {
+    @include tituloPagina();
+}
+
+.bloco-barra {
+    @include formatacao(20px);
+    #barra-de-busca {
+        @include barraBusca();
+    }
+}
+
+.bloco-seletor {
+    @include formatacao(0px);
+    p {
+        @include paragrafo();
+    }
+    #seletor-estado, #seletor-cidade {
+        @include seletor();
+    } 
+    #btn-buscar {
+        @include botaoBuscar();
+    }
+}
+
+.area-filtro {
+    @include divisaoFiltro();
+    .filtro-dropdown {
+        @include filtroDropDown();
+        ul {
+            @include listaPagina();
+            .titulo-filtro {
+                @include tituloFiltro();
+            }
+        }
+    }
+
+}
+
+.btn-filtro  {
+    @include botaoFiltro();
+}
+
+.container__botao-filtro:checked~.filtro-dropdown {
+    display: block;
+}
+
+.container__botao-filtro {
+    display: none;
+}

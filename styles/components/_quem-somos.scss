@@ -1,0 +1,61 @@
+@import '../abstract/variaveis';
+
+@mixin secao(){
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+@mixin titulo(){
+    color: $cor-terciaria;
+    font-family: $fonte-texto;
+    font-size: 1.1rem;   
+    font-style: italic;
+    text-decoration: underline;    
+}
+
+@mixin paragrafo(){
+    p {
+        font-size: 1rem;
+        font-family: $fonte-texto;
+        color: $cor-quartenaria;
+        font-weight: 300;
+    }
+}
+
+.titulo-about {
+    color: $cor-quartenaria;
+    font-family: $fonte-titulo;
+    padding: 7px;
+    border-radius: 0 0 10px 10px;
+    background-color: $cor-terciaria;
+    margin-bottom: 10px;
+}
+
+.quem-somos  {
+    @include secao();
+    .quem-somos__titulo {
+        @include titulo();
+    }
+    @include paragrafo();
+}    
+
+.motivo-trabalho {
+    @include secao();
+    .motivo__titulo {
+        @include titulo();
+    }
+    @include paragrafo();
+}
+
+.objetivo {
+    @include secao();
+    .objetivo-titulo {
+        @include titulo();
+    }
+    @include paragrafo();
+}
+

@@ -1,0 +1,1454 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap");
+body {
+  background-color: #181823;
+}
+
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 8px 7px 0 7px;
+}
+nav h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-family: "jost", sans-serif;
+  color: #fff;
+  font-weight: 400;
+}
+nav h1 a {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "jost", sans-serif;
+}
+nav h1 a img {
+  width: 31px;
+  height: 34px;
+}
+nav i {
+  margin-right: 7px;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
+  background-color: #181823;
+  display: none;
+  position: absolute;
+  top: 52px;
+  right: 0;
+  width: 55vw;
+  gap: 10px;
+}
+.menu-lateral .nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 20px;
+}
+.menu-lateral .nav li a {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "jost", sans-serif;
+  text-decoration: none;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.menu-cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 50px 0;
+  box-sizing: border-box;
+}
+.menu-cadastro .ou {
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.cadastrar {
+  background-color: transparent;
+  color: #d9d9d9;
+  border: 1px solid #d9d9d9;
+  border-radius: 30px;
+  font-family: "jost", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  text-decoration: none;
+  padding: 5px 15px;
+}
+
+.entrar {
+  background-color: #535fe7;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  font-family: "jost", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  text-decoration: none;
+  padding: 5px 30px;
+}
+
+.container__botao:checked ~ .menu-lateral {
+  display: block;
+}
+
+.container__botao {
+  display: none;
+}
+
+.pesquisar-escola-home h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "jost", sans-serif;
+  padding: 12px 3px 8px 8px;
+}
+.pesquisar-escola-home fieldset {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pesquisar-escola-home fieldset #selecionar-estado, .pesquisar-escola-home fieldset #selecionar-cidade {
+  width: 35%;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+.pesquisar-escola-home fieldset #selecionar-estado option, .pesquisar-escola-home fieldset #selecionar-cidade option {
+  color: #000;
+}
+.pesquisar-escola-home fieldset #buscar {
+  width: 20%;
+  border-radius: 50px;
+  background-color: #535fe7;
+  height: 31px;
+  margin-top: 10px;
+}
+
+.bloco-lista-escola, .bloco-cadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 10px;
+  margin-top: 30px;
+}
+.bloco-lista-escola img, .bloco-cadastro img {
+  margin: 20px 0;
+}
+.bloco-lista-escola h3, .bloco-cadastro h3 {
+  color: #535fe7;
+  font-size: 1.25rem;
+  font-family: "jost", sans-serif;
+  font-style: italic;
+}
+.bloco-lista-escola p, .bloco-cadastro p {
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+}
+.bloco-lista-escola a, .bloco-cadastro a {
+  background-color: #d9d9d9;
+  padding: 18px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  color: #000;
+}
+
+footer {
+  background-color: #d9d9d9;
+  margin-top: 25px;
+  text-align: center;
+}
+footer p {
+  color: #000;
+  font-family: "jost", sans-serif;
+  font-weight: 500;
+  padding: 15px 0;
+  font-size: "";
+}
+
+.titulo-about {
+  color: #fff;
+  font-family: "jost", sans-serif;
+  padding: 7px;
+  border-radius: 0 0 10px 10px;
+  background-color: #535fe7;
+  margin-bottom: 10px;
+}
+
+.quem-somos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.quem-somos .quem-somos__titulo {
+  color: #535fe7;
+  font-family: "poppins", sans-serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+.quem-somos p {
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.motivo-trabalho {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.motivo-trabalho .motivo__titulo {
+  color: #535fe7;
+  font-family: "poppins", sans-serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+.motivo-trabalho p {
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.objetivo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.objetivo .objetivo-titulo {
+  color: #535fe7;
+  font-family: "poppins", sans-serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+.objetivo p {
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.titulo-escolas {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 7px;
+  border-radius: 0 0 10px 10px;
+  background-color: #535fe7;
+  font-family: "jost", sans-serif;
+  margin-bottom: 10px;
+}
+
+.bloco-barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  margin-top: 20px;
+}
+.bloco-barra #barra-de-busca {
+  width: 80vw;
+  background: url("/assets/lupa.png") no-repeat;
+  height: 20px;
+  box-shadow: none;
+  background-color: #fff;
+  padding: 15px 40px;
+  border-radius: 30px;
+  background-position: left;
+  background-size: 20px;
+  background-position: 4cqmin;
+  margin: 15px 0;
+}
+
+.bloco-seletor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  margin-top: 0px;
+}
+.bloco-seletor p {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  padding: 12px 0;
+  margin-bottom: 10px;
+}
+.bloco-seletor #seletor-estado, .bloco-seletor #seletor-cidade {
+  padding: 5px 15px;
+  width: 30vw;
+  height: 25px;
+  border-radius: 30px;
+}
+.bloco-seletor #btn-buscar {
+  height: 25px;
+  width: 20vw;
+  border-radius: 30px;
+  background-color: #535fe7;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.area-filtro {
+  display: flex;
+  flex-direction: row-reverse;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  margin-top: 20px;
+  padding: 10px;
+}
+.area-filtro .filtro-dropdown {
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #000;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 378px;
+}
+.area-filtro .filtro-dropdown ul {
+  text-align: center;
+  padding: 8px;
+}
+.area-filtro .filtro-dropdown ul .titulo-filtro {
+  color: #000;
+  font-style: italic;
+  font-family: "jost", sans-serif;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.btn-filtro {
+  padding: 5px 10px;
+  background-color: #535fe7;
+  color: #fff;
+}
+
+.container__botao-filtro:checked ~ .filtro-dropdown {
+  display: block;
+}
+
+.container__botao-filtro {
+  display: none;
+}
+
+.lista-escolas {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 20px;
+}
+.lista-escolas .escola-n {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #000;
+  border-radius: 25px;
+}
+.lista-escolas .escola-n img {
+  padding: 10px;
+}
+.lista-escolas .escola-n p {
+  color: #000;
+  font-size: 1rem;
+  font-family: "jost", sans-serif;
+}
+.lista-escolas .escola-n a {
+  padding: 16.5px 80px;
+  background-color: #535fe7;
+  color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.informacoes-basicas {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0 0 30px 30px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+.informacoes-basicas h3 {
+  font-family: "jost", sans-serif;
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+.informacoes-basicas h2 {
+  text-align: start;
+  color: #000;
+  font-weight: bold;
+  font-family: "jost", sans-serif;
+  padding: 10px;
+}
+.informacoes-basicas p {
+  text-align: start;
+  padding: 0 10px 10px 10px;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.informacoes-gerais {
+  background-color: #fff;
+  border-radius: 30px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+.informacoes-gerais .titulo-informacoes {
+  text-align: start;
+  color: #000;
+  font-weight: bold;
+  font-family: "jost", sans-serif;
+  padding: 10px;
+}
+.informacoes-gerais h3 {
+  font-family: "jost", sans-serif;
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+.informacoes-gerais p {
+  text-align: start;
+  padding: 0 10px 10px 10px;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.sobre-profissional h2 {
+  text-align: start;
+  color: #000;
+  font-weight: bold;
+  font-family: "jost", sans-serif;
+  padding: 10px;
+}
+.sobre-profissional p {
+  text-align: start;
+  padding: 0 10px 10px 10px;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.titulo-escolas {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 7px;
+  border-radius: 0 0 10px 10px;
+  background-color: #535fe7;
+  font-family: "jost", sans-serif;
+  margin-bottom: 10px;
+}
+
+.bloco-barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  margin-top: 20px;
+}
+.bloco-barra #barra-de-busca {
+  width: 80vw;
+  background: url("/assets/lupa.png") no-repeat;
+  height: 20px;
+  box-shadow: none;
+  background-color: #fff;
+  padding: 15px 40px;
+  border-radius: 30px;
+  background-position: left;
+  background-size: 20px;
+  background-position: 4cqmin;
+  margin: 15px 0;
+}
+
+.bloco-seletor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  margin-top: 0px;
+}
+.bloco-seletor p {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  padding: 12px 0;
+  margin-bottom: 10px;
+}
+.bloco-seletor #seletor-estado, .bloco-seletor #seletor-cidade {
+  padding: 5px 15px;
+  width: 30vw;
+  height: 25px;
+  border-radius: 30px;
+}
+.bloco-seletor #btn-buscar {
+  height: 25px;
+  width: 20vw;
+  border-radius: 30px;
+  background-color: #535fe7;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.area-filtro {
+  display: flex;
+  flex-direction: row-reverse;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  margin-top: 20px;
+  padding: 10px;
+}
+.area-filtro .filtro-dropdown {
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #000;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 378px;
+}
+.area-filtro .filtro-dropdown ul {
+  text-align: center;
+  padding: 8px;
+}
+.area-filtro .filtro-dropdown ul .titulo-filtro {
+  color: #000;
+  font-style: italic;
+  font-family: "jost", sans-serif;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.btn-filtro {
+  padding: 5px 10px;
+  background-color: #535fe7;
+  color: #fff;
+}
+
+.container__botao-filtro:checked ~ .filtro-dropdown {
+  display: block;
+}
+
+.container__botao-filtro {
+  display: none;
+}
+
+.titulo-profissionais {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 7px;
+  border-radius: 0 0 10px 10px;
+  background-color: #535fe7;
+  font-family: "jost", sans-serif;
+  margin-bottom: 10px;
+}
+
+.bloco-barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  margin-top: 20px;
+}
+.bloco-barra #barra-de-busca {
+  width: 80vw;
+  background: url("/assets/lupa.png") no-repeat;
+  height: 20px;
+  box-shadow: none;
+  background-color: #fff;
+  padding: 15px 40px;
+  border-radius: 30px;
+  background-position: left;
+  background-size: 20px;
+  background-position: 4cqmin;
+  margin: 15px 0;
+}
+
+.bloco-seletor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  margin-top: 0px;
+}
+.bloco-seletor p {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  padding: 12px 0;
+  margin-bottom: 10px;
+}
+.bloco-seletor #seletor-estado, .bloco-seletor #seletor-cidade {
+  padding: 5px 15px;
+  width: 30vw;
+  height: 25px;
+  border-radius: 30px;
+}
+.bloco-seletor #btn-buscar {
+  height: 25px;
+  width: 20vw;
+  border-radius: 30px;
+  background-color: #535fe7;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.area-filtro {
+  display: flex;
+  flex-direction: row-reverse;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  margin-top: 20px;
+  padding: 10px;
+}
+.area-filtro .filtro-dropdown {
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #000;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 378px;
+}
+.area-filtro .filtro-dropdown ul {
+  text-align: center;
+  padding: 8px;
+}
+.area-filtro .filtro-dropdown ul .titulo-filtro {
+  color: #000;
+  font-style: italic;
+  font-family: "jost", sans-serif;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.btn-filtro {
+  padding: 5px 10px;
+  background-color: #535fe7;
+  color: #fff;
+}
+
+.container__botao-filtro:checked ~ .filtro-dropdown {
+  display: block;
+}
+
+.container__botao-filtro {
+  display: none;
+}
+
+.lista-escolas {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 20px;
+}
+.lista-escolas .escola-n {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #000;
+  border-radius: 25px;
+}
+.lista-escolas .escola-n img {
+  padding: 10px;
+}
+.lista-escolas .escola-n p {
+  color: #000;
+  font-size: 1rem;
+  font-family: "jost", sans-serif;
+}
+.lista-escolas .escola-n a {
+  padding: 16.5px 80px;
+  background-color: #535fe7;
+  color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.lista-profissionais {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 20px;
+}
+.lista-profissionais .profissional-n {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #000;
+  border-radius: 25px;
+}
+.lista-profissionais .profissional-n img {
+  padding: 10px;
+}
+.lista-profissionais .profissional-n p {
+  color: #000;
+  font-size: 1rem;
+  font-family: "jost", sans-serif;
+}
+.lista-profissionais .profissional-n a {
+  padding: 16.5px 80px;
+  background-color: #535fe7;
+  color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.informacoes-basicas {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0 0 30px 30px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+.informacoes-basicas h3 {
+  font-family: "jost", sans-serif;
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+.informacoes-basicas h2 {
+  text-align: start;
+  color: #000;
+  font-weight: bold;
+  font-family: "jost", sans-serif;
+  padding: 10px;
+}
+.informacoes-basicas p {
+  text-align: start;
+  padding: 0 10px 10px 10px;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.informacoes-gerais {
+  background-color: #fff;
+  border-radius: 30px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+.informacoes-gerais .titulo-informacoes {
+  text-align: start;
+  color: #000;
+  font-weight: bold;
+  font-family: "jost", sans-serif;
+  padding: 10px;
+}
+.informacoes-gerais h3 {
+  font-family: "jost", sans-serif;
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+.informacoes-gerais p {
+  text-align: start;
+  padding: 0 10px 10px 10px;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.sobre-profissional h2 {
+  text-align: start;
+  color: #000;
+  font-weight: bold;
+  font-family: "jost", sans-serif;
+  padding: 10px;
+}
+.sobre-profissional p {
+  text-align: start;
+  padding: 0 10px 10px 10px;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.informacoes-basicas {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0 0 30px 30px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+.informacoes-basicas h3 {
+  font-family: "jost", sans-serif;
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+.informacoes-basicas h2 {
+  text-align: start;
+  color: #000;
+  font-weight: bold;
+  font-family: "jost", sans-serif;
+  padding: 10px;
+}
+.informacoes-basicas p {
+  text-align: start;
+  padding: 0 10px 10px 10px;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.informacoes-gerais {
+  background-color: #fff;
+  border-radius: 30px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+.informacoes-gerais .titulo-informacoes {
+  text-align: start;
+  color: #000;
+  font-weight: bold;
+  font-family: "jost", sans-serif;
+  padding: 10px;
+}
+.informacoes-gerais h3 {
+  font-family: "jost", sans-serif;
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+.informacoes-gerais p {
+  text-align: start;
+  padding: 0 10px 10px 10px;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.sobre-profissional h2 {
+  text-align: start;
+  color: #000;
+  font-weight: bold;
+  font-family: "jost", sans-serif;
+  padding: 10px;
+}
+.sobre-profissional p {
+  text-align: start;
+  padding: 0 10px 10px 10px;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.informacoes-basicas {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0 0 30px 30px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+.informacoes-basicas h3 {
+  font-family: "jost", sans-serif;
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+.informacoes-basicas h2 {
+  text-align: start;
+  color: #000;
+  font-weight: bold;
+  font-family: "jost", sans-serif;
+  padding: 10px;
+}
+.informacoes-basicas p {
+  text-align: start;
+  padding: 0 10px 10px 10px;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.informacoes-gerais {
+  background-color: #fff;
+  border-radius: 30px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+.informacoes-gerais .titulo-informacoes {
+  text-align: start;
+  color: #000;
+  font-weight: bold;
+  font-family: "jost", sans-serif;
+  padding: 10px;
+}
+.informacoes-gerais h3 {
+  font-family: "jost", sans-serif;
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+.informacoes-gerais p {
+  text-align: start;
+  padding: 0 10px 10px 10px;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.sobre-profissional h2 {
+  text-align: start;
+  color: #000;
+  font-weight: bold;
+  font-family: "jost", sans-serif;
+  padding: 10px;
+}
+.sobre-profissional p {
+  text-align: start;
+  padding: 0 10px 10px 10px;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.profissionais-de-apoio {
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.profissionais-de-apoio img {
+  text-align: center;
+}
+.profissionais-de-apoio h2 {
+  color: #535fe7;
+  font-family: "poppins", sans-serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  text-decoration: underline;
+  margin: 10px 0;
+}
+.profissionais-de-apoio p {
+  text-align: start;
+  padding: 0 10px 10px 10px;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.TEA {
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.TEA img {
+  width: 320px;
+  height: 173px;
+  border-radius: 30px;
+  background-size: cover;
+}
+.TEA h2 {
+  color: #535fe7;
+  font-family: "poppins", sans-serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  text-decoration: underline;
+  margin: 10px 0;
+}
+.TEA p {
+  color: #fff;
+  text-align: start;
+  padding: 0 10px 10px 10px;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.down {
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.down img {
+  text-align: center;
+}
+.down h2 {
+  color: #535fe7;
+  font-family: "poppins", sans-serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  text-decoration: underline;
+  margin: 10px 0;
+}
+.down p {
+  text-align: start;
+  padding: 0 10px 10px 10px;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+  color: #fff;
+}
+.down p .link-leitura-down {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.tela-login {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 30px;
+  border: 2px solid #000;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+.tela-login img {
+  width: 139px;
+  height: 139px;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+.tela-login h2 {
+  font-size: 1.9rem;
+  font-family: "jost", sans-serif;
+}
+.tela-login #login {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+.tela-login #login label {
+  text-align: start;
+  font-family: "jost", sans-serif;
+  font-weight: bold;
+  color: #000;
+  font-size: 0.9rem;
+}
+.tela-login #login input {
+  border-radius: 30px;
+  border: 2px solid #181823;
+  padding: 8px 10px;
+}
+.tela-login #login .forgot {
+  text-align: end;
+  color: #535fe7;
+  font-style: italic;
+  cursor: pointer;
+}
+.tela-login #login #btn-logar {
+  background-color: #535fe7;
+  border-radius: 30px;
+  border: none;
+  padding: 4px;
+  font-family: "jost", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.tela-login #login .line-l {
+  background-color: black;
+  position: absolute;
+  top: 506px;
+  left: 27px;
+  width: 35%;
+  height: 1px;
+  border: none;
+}
+.tela-login #login .line-r {
+  background-color: black;
+  position: absolute;
+  top: 506px;
+  right: 27px;
+  width: 35%;
+  height: 1px;
+  border: none;
+}
+.tela-login #login .sem-conta {
+  font-size: 0.9rem;
+  font-family: "jost", sans-serif;
+  margin-top: 15px;
+}
+.tela-login #login .sem-conta a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #535fe7;
+}
+
+.tela-login {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 30px;
+  border: 2px solid #000;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+.tela-login img {
+  width: 139px;
+  height: 139px;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+.tela-login h2 {
+  font-size: 1.9rem;
+  font-family: "jost", sans-serif;
+}
+.tela-login #login {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+.tela-login #login label {
+  text-align: start;
+  font-family: "jost", sans-serif;
+  font-weight: bold;
+  color: #000;
+  font-size: 0.9rem;
+}
+.tela-login #login input {
+  border-radius: 30px;
+  border: 2px solid #181823;
+  padding: 8px 10px;
+}
+.tela-login #login .forgot {
+  text-align: end;
+  color: #535fe7;
+  font-style: italic;
+  cursor: pointer;
+}
+.tela-login #login #btn-logar {
+  background-color: #535fe7;
+  border-radius: 30px;
+  border: none;
+  padding: 4px;
+  font-family: "jost", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.tela-login #login .line-l {
+  background-color: black;
+  position: absolute;
+  top: 506px;
+  left: 27px;
+  width: 35%;
+  height: 1px;
+  border: none;
+}
+.tela-login #login .line-r {
+  background-color: black;
+  position: absolute;
+  top: 506px;
+  right: 27px;
+  width: 35%;
+  height: 1px;
+  border: none;
+}
+.tela-login #login .sem-conta {
+  font-size: 0.9rem;
+  font-family: "jost", sans-serif;
+  margin-top: 15px;
+}
+.tela-login #login .sem-conta a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #535fe7;
+}
+
+.tela-cadastro {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 30px;
+  border: 2px solid #000;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+.tela-cadastro img {
+  width: 139px;
+  height: 139px;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+.tela-cadastro h2 {
+  font-size: 1.9rem;
+  font-family: "jost", sans-serif;
+}
+.tela-cadastro #cadastro {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+.tela-cadastro #cadastro label {
+  text-align: start;
+  font-family: "jost", sans-serif;
+  font-weight: bold;
+  color: #000;
+  font-size: 0.9rem;
+}
+.tela-cadastro #cadastro input {
+  border-radius: 30px;
+  border: 2px solid #181823;
+  padding: 8px 10px;
+}
+.tela-cadastro #cadastro #btn-cadastrar {
+  background-color: #535fe7;
+  border-radius: 30px;
+  border: none;
+  padding: 4px;
+  font-family: "jost", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.tela-cadastro #cadastro .line-l {
+  background-color: black;
+  position: absolute;
+  top: 506px;
+  left: 27px;
+  width: 35%;
+  height: 1px;
+  border: none;
+}
+.tela-cadastro #cadastro .line-r {
+  background-color: black;
+  position: absolute;
+  top: 506px;
+  right: 27px;
+  width: 35%;
+  height: 1px;
+  border: none;
+}
+
+.tela-login {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 30px;
+  border: 2px solid #000;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+.tela-login img {
+  width: 139px;
+  height: 139px;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+.tela-login h2 {
+  font-size: 1.9rem;
+  font-family: "jost", sans-serif;
+}
+.tela-login #login {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+.tela-login #login label {
+  text-align: start;
+  font-family: "jost", sans-serif;
+  font-weight: bold;
+  color: #000;
+  font-size: 0.9rem;
+}
+.tela-login #login input {
+  border-radius: 30px;
+  border: 2px solid #181823;
+  padding: 8px 10px;
+}
+.tela-login #login .forgot {
+  text-align: end;
+  color: #535fe7;
+  font-style: italic;
+  cursor: pointer;
+}
+.tela-login #login #btn-logar {
+  background-color: #535fe7;
+  border-radius: 30px;
+  border: none;
+  padding: 4px;
+  font-family: "jost", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.tela-login #login .line-l {
+  background-color: black;
+  position: absolute;
+  top: 506px;
+  left: 27px;
+  width: 35%;
+  height: 1px;
+  border: none;
+}
+.tela-login #login .line-r {
+  background-color: black;
+  position: absolute;
+  top: 506px;
+  right: 27px;
+  width: 35%;
+  height: 1px;
+  border: none;
+}
+.tela-login #login .sem-conta {
+  font-size: 0.9rem;
+  font-family: "jost", sans-serif;
+  margin-top: 15px;
+}
+.tela-login #login .sem-conta a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #535fe7;
+}
+
+.tela-forgot {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 30px;
+  border: 2px solid #000;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+.tela-forgot img {
+  width: 139px;
+  height: 139px;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+.tela-forgot h2 {
+  font-size: 1.9rem;
+  font-family: "jost", sans-serif;
+}
+.tela-forgot .recuperar {
+  text-align: center;
+}
+.tela-forgot .recuperar h3 {
+  font-size: 1.15rem;
+  font-family: "jost", sans-serif;
+  margin-bottom: 10px;
+}
+.tela-forgot .recuperar p {
+  font-size: 0.9rem;
+  font-family: "jost", sans-serif;
+}
+.tela-forgot #forgot {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+.tela-forgot #forgot label {
+  text-align: start;
+  font-family: "jost", sans-serif;
+  font-weight: bold;
+  color: #000;
+  font-size: 0.9rem;
+}
+.tela-forgot #forgot input {
+  border-radius: 30px;
+  border: 2px solid #181823;
+  padding: 8px 10px;
+}
+.tela-forgot #forgot #btn-enviar {
+  background-color: #535fe7;
+  border-radius: 30px;
+  border: none;
+  padding: 4px;
+  font-family: "jost", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

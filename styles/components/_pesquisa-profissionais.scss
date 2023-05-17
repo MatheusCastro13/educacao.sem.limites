@@ -1,0 +1,52 @@
+@import '../abstract/variaveis';
+@import '../components/pesquisa-escola';
+
+.titulo-profissionais {
+    @include tituloPagina();
+}
+
+.bloco-barra {
+    @include formatacao(20px);
+    #barra-de-busca {
+        @include barraBusca();
+    }
+}
+
+.bloco-seletor {
+    @include formatacao(0px);
+    p {
+        @include paragrafo();
+    }
+    #seletor-estado, #seletor-cidade {
+        @include seletor();
+    } 
+    #btn-buscar {
+        @include botaoBuscar();
+    }
+}
+
+.area-filtro {
+    @include divisaoFiltro();
+    .filtro-dropdown {
+        @include filtroDropDown();
+        ul {
+            @include listaPagina();
+            .titulo-filtro {
+                @include tituloFiltro();
+            }
+        }
+    }
+
+}
+
+.btn-filtro  {
+    @include botaoFiltro();
+}
+
+.container__botao-filtro:checked~.filtro-dropdown {
+    display: block;
+}
+
+.container__botao-filtro {
+    display: none;
+}

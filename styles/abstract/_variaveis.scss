@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Poppins&display=swap');
+
+//cores
+$cor-primaria: #181823;
+$cor-secundaria: #d9d9d9;
+$cor-terciaria: #535fe7;
+$cor-quartenaria: #fff;
+$cor-cinco: #000;
+
+//fontes
+$fonte-titulo: 'jost', sans-serif;
+$fonte-texto: 'poppins', sans-serif;
+
+//tamanho da fonte
+
+$tamanho-fonte: 1rem;
+
+@mixin formatacaoInfBasica(){
+    background-color: $cor-quartenaria;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 30px 30px;
+    border: 1px solid $cor-cinco;
+    margin-bottom: 10px; 
+}
+
+@mixin tituloInf() {
+    font-family: $fonte-titulo;
+    font-size: 1.25rem;
+    color: $cor-cinco;
+    margin-bottom: 10px;
+}
+
+@mixin tituloBloco() {
+    text-align: start;
+    color: $cor-cinco;
+    font-weight: bold;
+    font-family: $fonte-titulo;
+    padding: 10px 10px 5px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;    
+}
+
+@mixin textoInf() {
+    text-align: start;
+    padding: 0 10px 10px 10px;
+    font-family: $fonte-texto;
+    font-size: .9rem;
+}
+
+@mixin formatacaoLista() {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;   
+}
+
+@mixin blocoItemLista() {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    background-color: $cor-quartenaria;
+    padding: 15px;
+    border: 1px solid $cor-cinco;
+    border-radius: 25px;   
+}
+
+@mixin imagemItem() {
+    padding: 10px;
+}
+
+@mixin paragrafoItem() {
+    color: $cor-cinco;
+    font-size: 1rem;
+    font-family: $fonte-titulo;
+}
+
+@mixin linkItem(){
+    padding: 16.5px 80px;
+    background-color: $cor-terciaria;
+    color: $cor-cinco;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: $fonte-texto;
+    font-size: 1rem;
+}

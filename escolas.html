@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educaçao Sem Limites</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/2212beeac0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html"><img src="assets/Logo.png" alt="Logo Educaçao sem limites">Educação Sem Limites</a></h1>
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="menu-lateral">
+                <ul class="nav">
+                    <li><a href="about.html">Sobre Nós</a></li>
+                    <li><a href="escolas.html">Escolas</a></li>
+                    <li><a href="profissionais.html">Profissionais</a></li>
+                    <li><a href="details.html">Saiba Mais</a></li>
+                </ul>
+                <ul class="menu-cadastro">
+                    <li><a href="cadastro.html" class="cadastrar">Cadastre-se</a></li>
+                    <li class="ou">ou</li>
+                    <li><a href="login.html" class="entrar">Entrar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2 class="titulo-escolas">Escolas</h2>
+        <section class="pesquisar-escolas">
+            <div class="bloco-barra">
+                <p>Jápossui uma escola em mente?<br>
+                    verifique se ela possui uma página de perfil e confira as informações.</p>
+                <input type="search" name="barra-de-busca" id="barra-de-busca" placeholder="Buscar: "> 
+                <label for="barra-de-busca"></label>
+            </div>
+            <div class="bloco-seletor">
+                <p>Esta procurando por uma escola?<br>
+                Encontre  ua para você agora!</p>
+                <fieldset>
+                    <label for="seletor-estado"></label>
+                    <select id="seletor-estado">
+                        <option disabled selected>UF: </option>
+                        <option>Goiás</option>
+                        <option>Tocantins</option>
+                        <option>Mato Grosso</option>
+                    </select>
+                    <label for="seletor-cidade"></label>
+                    <select id="seletor-cidade">
+                        <option disabled selected>Cidade: </option>
+                        <option>Goiânia</option>
+                    </select>
+                    <button id="btn-buscar" type="button">Buscar</button>
+                    <label for="btn-buscar"></label>
+                </fieldset>
+            </div>
+        </section>
+        <div class="area-filtro">
+            <input type="checkbox" id="filtro-btn" class="container__botao-filtro">
+            <label for="filtro-btn" class="btn-filtro">Filtro</label>
+            <div class="filtro-dropdown">
+                <ul class="filtro">
+                    <li><h3 class="titulo-filtro">Dependência Administrativa</h3></li>
+                    <li>Pública</li>
+                    <li>Privada</li>
+                    <li><h3 class="titulo-filtro">Etapas de ensino</h3></li>
+                    <li><h3>Fundamental</h3></li>
+                    <li><h3>Médio</h3></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="lista-escolas">
+            <li class="escola-n">
+                <img src="/assets/colegio-atrio.png">
+                <h3>Colégio Átrio</h3>
+                <a href="descricao-escola.html">Mais Informações</a>
+            </li>
+            <li class="escola-n">
+                <img src="/assets/colegio-atrio.png">
+                <h3>Colégio Átrio</h3>
+                <a href="descricao-escola.html">Mais Informações</a>
+            </li>
+            <li class="escola-n">
+                <img src="/assets/colegio-atrio.png">
+                <h3>Colégio Átrio</h3>
+                <a href="descricao-escola.html">Mais Informações</a>
+            </li>
+            <li class="escola-n">
+                <img src="/assets/colegio-atrio.png">
+                <h3>Colégio Átrio</h3>
+                <a href="descricao-escola.html">Mais Informações</a>
+            </li>
+            <li class="escola-n">
+                <img src="/assets/colegio-atrio.png">
+                <h3>Colégio Átrio</h3>
+                <a href="descricao-escola.html">Mais Informações</a>
+            </li>
+            <li class="escola-n">
+                <img src="/assets/colegio-atrio.png">
+                <h3>Colégio Átrio</h3>
+                <a href="descricao-escola.html">Mais Informações</a>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>    

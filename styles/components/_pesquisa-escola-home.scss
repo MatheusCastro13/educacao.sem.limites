@@ -1,0 +1,40 @@
+@import '../abstract/variaveis';
+
+
+.pesquisar-escola-home {
+    h2 {
+        color: $cor-quartenaria;
+        font-size: 1.5rem;
+        font-family: $fonte-titulo;
+        padding: 12px 3px 8px 8px;
+    }  
+    fieldset {
+        display: flex;
+        justify-content: space-evenly;
+        #selecionar-estado, #selecionar-cidade {
+            width: 35%;
+            padding: 7px 12px;
+            border: none;
+            border-radius: 50px;
+            margin-top: 10px;
+            option {
+                color: $cor-cinco;
+            }
+        }
+        #buscar {
+            width: 20%;
+            border-radius: 50px;
+            background-color: $cor-terciaria;
+            height: 31px;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .botao-hamburguer {
+        display: none;
+
+    }
+    
+}

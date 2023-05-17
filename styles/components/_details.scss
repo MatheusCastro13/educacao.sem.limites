@@ -1,0 +1,69 @@
+@import '../abstract/variaveis';
+@import '../components/descriao-escola';
+
+@mixin tituloSublinhado() {
+    color: #535fe7;
+    font-family: "poppins", sans-serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.profissionais-de-apoio {
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    img  {
+        text-align: center;
+    }
+    h2 {
+        @include tituloSublinhado();
+        margin: 10px 0;
+    }
+    p {
+        @include textoInf();
+        color: $cor-quartenaria;
+    }
+}
+
+.TEA {
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    img {
+        width: 320px;
+        height: 173px;
+        border-radius: 30px;
+        background-size: cover;
+    }
+    h2 {
+        @include tituloSublinhado();
+        margin: 10px 0;
+    }
+    p {
+        color: $cor-quartenaria;
+        @include textoInf();
+    }
+}
+
+.down {
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    img  {
+        text-align: center;
+    }
+    h2 {
+        @include tituloSublinhado();
+        margin: 10px 0;
+    }
+    p {
+        @include textoInf();
+        color: $cor-quartenaria;
+        .link-leitura-down {
+            font-style: italic;
+            text-decoration: underline;
+        }
+    }
+    
+}
